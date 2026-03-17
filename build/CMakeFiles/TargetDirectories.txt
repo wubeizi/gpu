@@ -1,0 +1,3 @@
+/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/rebuild_cache.dir
+/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/edit_cache.dir
+/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir

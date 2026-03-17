@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/bfs.h
+graph.h
+../include/graph.h
+vector
+-
+
+../include/graph.h
+cstdint
+-
+vector
+-
+string
+-
+
+../include/utils.h
+cstdint
+-
+vector
+-
+string
+-
+
+/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_gpu_naive.cu
+bfs.h
+/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs.h
+utils.h
+/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/utils.h
+cuda_runtime.h
+-
+iostream
+-
+
