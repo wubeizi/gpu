@@ -89,13 +89,12 @@ int main(int argc, char* argv[]) {
     check_result(cpu_level, level_gpu_naive, "GPU_naive");
     std::cout << std::endl;
 
-
-    //
-    // std::vector<int> gpu_level_v2;
-    // double gpu_time_v2 = bfs_gpu_frontier(graph, source, gpu_level_v2);
-    // print_performance("GPU_frontier", gpu_time_v2, cpu_time);
-    // check_result(cpu_level, gpu_level_v2, "GPU_frontier");
-    // std::cout << std::endl;
+    std::vector<int> gpu_level_v2(graph.num_nodes, -1);
+    gpu_level_v2[source] = 0;
+    double gpu_time_v2 = bfs_gpu_frontier(graph, source, gpu_level_v2);
+    print_performance("GPU_frontier", gpu_time_v2, cpu_time);
+    check_result(cpu_level, gpu_level_v2, "GPU_frontier");
+    //std::cout << std::endl;
     //
     // std::vector<int> gpu_level_v3;
     // double gpu_time_v3 = bfs_gpu_direction(graph, source, gpu_level_v3);

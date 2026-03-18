@@ -15,8 +15,8 @@ double bfs_cpu(const CSRGraph& graph, int source, std::vector<int>& level);
 // GPU naive BFS（成员B实现）
 double bfs_gpu_naive(const CSRGraph& graph, int source, std::vector<int>& level);
 
-// GPU 优化一：前沿队列优化（成员C实现）
-// double bfs_gpu_frontier(const CSRGraph& graph, int source, std::vector<int>& level);
+//GPU 优化一：前沿队列优化（成员C实现）
+double bfs_gpu_frontier(const CSRGraph& graph, int source, std::vector<int>& level);
 
 // GPU 优化二：方向优化（成员D实现）
 // double bfs_gpu_direction(const CSRGraph& graph, int source, std::vector<int>& level);
