@@ -33,9 +33,9 @@ add_executable(main
     src/bfs_cpu.cpp
     src/utils.cpp
     src/bfs_gpu_naive.cu       # 成员B
-#     src/bfs_gpu_frontier.cu    # 成员C
-#     src/bfs_gpu_direction.cu   # 成员D
-    src/bfs_gpu_shared.cu      # 成员E
+    src/bfs_gpu_frontier.cu    # 成员C
+    src/bfs_gpu_shared.cu      # 成员D
+    src/bfs_gpu_warp.cu      # 成员E
 )
 
 target_compile_options(main PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:--expt-relaxed-constexpr>)

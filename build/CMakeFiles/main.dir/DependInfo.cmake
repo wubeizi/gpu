@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
-  "/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_gpu_naive.cu" "/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o"
-  "/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_gpu_shared.cu" "/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o"
+  "/data0/lijiafeng/project/gpu/src/bfs_gpu_frontier.cu" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o"
+  "/data0/lijiafeng/project/gpu/src/bfs_gpu_naive.cu" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o"
+  "/data0/lijiafeng/project/gpu/src/bfs_gpu_shared.cu" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o"
+  "/data0/lijiafeng/project/gpu/src/bfs_gpu_warp.cu" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
 
@@ -15,10 +17,10 @@ set(CMAKE_CUDA_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_cpu.cpp" "/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/src/bfs_cpu.cpp.o"
-  "/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/graph.cpp" "/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/src/graph.cpp.o"
-  "/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/main.cpp" "/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/src/main.cpp.o"
-  "/data1/zhangyouzhi/Learn_from_paper/gpu-main/src/utils.cpp" "/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/src/utils.cpp.o"
+  "/data0/lijiafeng/project/gpu/src/bfs_cpu.cpp" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/bfs_cpu.cpp.o"
+  "/data0/lijiafeng/project/gpu/src/graph.cpp" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/graph.cpp.o"
+  "/data0/lijiafeng/project/gpu/src/main.cpp" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/main.cpp.o"
+  "/data0/lijiafeng/project/gpu/src/utils.cpp" "/data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/src/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

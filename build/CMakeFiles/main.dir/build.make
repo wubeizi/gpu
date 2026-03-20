@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/zhangyouzhi/Learn_from_paper/gpu-main
+CMAKE_SOURCE_DIR = /data0/lijiafeng/project/gpu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/zhangyouzhi/Learn_from_paper/gpu-main/build
+CMAKE_BINARY_DIR = /data0/lijiafeng/project/gpu/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -59,60 +59,60 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /data0/lijiafeng/project/gpu/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data0/lijiafeng/project/gpu/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data0/lijiafeng/project/gpu/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 CMakeFiles/main.dir/src/graph.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/graph.cpp.o: ../src/graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/graph.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/graph.cpp.o -c /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/graph.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/graph.cpp.o -c /data0/lijiafeng/project/gpu/src/graph.cpp
 
 CMakeFiles/main.dir/src/graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/graph.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/graph.cpp > CMakeFiles/main.dir/src/graph.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data0/lijiafeng/project/gpu/src/graph.cpp > CMakeFiles/main.dir/src/graph.cpp.i
 
 CMakeFiles/main.dir/src/graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/graph.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/graph.cpp -o CMakeFiles/main.dir/src/graph.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data0/lijiafeng/project/gpu/src/graph.cpp -o CMakeFiles/main.dir/src/graph.cpp.s
 
 CMakeFiles/main.dir/src/bfs_cpu.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/bfs_cpu.cpp.o: ../src/bfs_cpu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/bfs_cpu.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/bfs_cpu.cpp.o -c /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_cpu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/bfs_cpu.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/bfs_cpu.cpp.o -c /data0/lijiafeng/project/gpu/src/bfs_cpu.cpp
 
 CMakeFiles/main.dir/src/bfs_cpu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/bfs_cpu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_cpu.cpp > CMakeFiles/main.dir/src/bfs_cpu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data0/lijiafeng/project/gpu/src/bfs_cpu.cpp > CMakeFiles/main.dir/src/bfs_cpu.cpp.i
 
 CMakeFiles/main.dir/src/bfs_cpu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/bfs_cpu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_cpu.cpp -o CMakeFiles/main.dir/src/bfs_cpu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data0/lijiafeng/project/gpu/src/bfs_cpu.cpp -o CMakeFiles/main.dir/src/bfs_cpu.cpp.s
 
 CMakeFiles/main.dir/src/utils.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/utils.cpp.o: ../src/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/utils.cpp.o -c /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/utils.cpp.o -c /data0/lijiafeng/project/gpu/src/utils.cpp
 
 CMakeFiles/main.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/utils.cpp > CMakeFiles/main.dir/src/utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data0/lijiafeng/project/gpu/src/utils.cpp > CMakeFiles/main.dir/src/utils.cpp.i
 
 CMakeFiles/main.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/utils.cpp -o CMakeFiles/main.dir/src/utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data0/lijiafeng/project/gpu/src/utils.cpp -o CMakeFiles/main.dir/src/utils.cpp.s
 
 CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o: ../src/bfs_gpu_naive.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o"
-	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_gpu_naive.cu -o CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o"
+	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /data0/lijiafeng/project/gpu/src/bfs_gpu_naive.cu -o CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o
 
 CMakeFiles/main.dir/src/bfs_gpu_naive.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/main.dir/src/bfs_gpu_naive.cu.i"
@@ -122,10 +122,23 @@ CMakeFiles/main.dir/src/bfs_gpu_naive.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/main.dir/src/bfs_gpu_naive.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o: ../src/bfs_gpu_frontier.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o"
+	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /data0/lijiafeng/project/gpu/src/bfs_gpu_frontier.cu -o CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o
+
+CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o: ../src/bfs_gpu_shared.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o"
-	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /data1/zhangyouzhi/Learn_from_paper/gpu-main/src/bfs_gpu_shared.cu -o CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o"
+	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /data0/lijiafeng/project/gpu/src/bfs_gpu_shared.cu -o CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o
 
 CMakeFiles/main.dir/src/bfs_gpu_shared.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/main.dir/src/bfs_gpu_shared.cu.i"
@@ -135,6 +148,19 @@ CMakeFiles/main.dir/src/bfs_gpu_shared.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/main.dir/src/bfs_gpu_shared.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o: ../src/bfs_gpu_warp.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CUDA object CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o"
+	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /data0/lijiafeng/project/gpu/src/bfs_gpu_warp.cu -o CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o
+
+CMakeFiles/main.dir/src/bfs_gpu_warp.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/main.dir/src/bfs_gpu_warp.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/main.dir/src/bfs_gpu_warp.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/main.dir/src/bfs_gpu_warp.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.cpp.o" \
@@ -142,7 +168,9 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/bfs_cpu.cpp.o" \
 "CMakeFiles/main.dir/src/utils.cpp.o" \
 "CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o" \
-"CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o"
+"CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o" \
+"CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o" \
+"CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -152,10 +180,12 @@ main: CMakeFiles/main.dir/src/graph.cpp.o
 main: CMakeFiles/main.dir/src/bfs_cpu.cpp.o
 main: CMakeFiles/main.dir/src/utils.cpp.o
 main: CMakeFiles/main.dir/src/bfs_gpu_naive.cu.o
+main: CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o
 main: CMakeFiles/main.dir/src/bfs_gpu_shared.cu.o
+main: CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data0/lijiafeng/project/gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +198,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /data1/zhangyouzhi/Learn_from_paper/gpu-main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/zhangyouzhi/Learn_from_paper/gpu-main /data1/zhangyouzhi/Learn_from_paper/gpu-main /data1/zhangyouzhi/Learn_from_paper/gpu-main/build /data1/zhangyouzhi/Learn_from_paper/gpu-main/build /data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data0/lijiafeng/project/gpu/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data0/lijiafeng/project/gpu /data0/lijiafeng/project/gpu /data0/lijiafeng/project/gpu/build /data0/lijiafeng/project/gpu/build /data0/lijiafeng/project/gpu/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

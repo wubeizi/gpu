@@ -18,8 +18,8 @@ double bfs_gpu_naive(const CSRGraph& graph, int source, std::vector<int>& level)
 //GPU 优化一：前沿队列优化（成员C实现）
 double bfs_gpu_frontier(const CSRGraph& graph, int source, std::vector<int>& level);
 
-// GPU 优化二：方向优化（成员D实现）
-// double bfs_gpu_direction(const CSRGraph& graph, int source, std::vector<int>& level);
-
-// GPU 优化三：共享内存缓存（成员E实现）
+// GPU 优化二：共享内存缓存（成员D实现）
 double bfs_gpu_shared(const CSRGraph& graph, int source, std::vector<int>& level);
+
+// GPU 优化三：warp 级别优化（成员E实现）
+double bfs_gpu_warp(const CSRGraph& graph, int source, std::vector<int>& level);

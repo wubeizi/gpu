@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/zhangyouzhi/Learn_from_paper/gpu-main
+CMAKE_SOURCE_DIR = /data0/lijiafeng/project/gpu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/zhangyouzhi/Learn_from_paper/gpu-main/build
+CMAKE_BINARY_DIR = /data0/lijiafeng/project/gpu/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles /data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /data0/lijiafeng/project/gpu/build/CMakeFiles /data0/lijiafeng/project/gpu/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/zhangyouzhi/Learn_from_paper/gpu-main/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data0/lijiafeng/project/gpu/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ src/bfs_cpu.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_cpu.cpp.s
 .PHONY : src/bfs_cpu.cpp.s
 
+src/bfs_gpu_frontier.o: src/bfs_gpu_frontier.cu.o
+
+.PHONY : src/bfs_gpu_frontier.o
+
+# target to build an object file
+src/bfs_gpu_frontier.cu.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.o
+.PHONY : src/bfs_gpu_frontier.cu.o
+
+src/bfs_gpu_frontier.i: src/bfs_gpu_frontier.cu.i
+
+.PHONY : src/bfs_gpu_frontier.i
+
+# target to preprocess a source file
+src/bfs_gpu_frontier.cu.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.i
+.PHONY : src/bfs_gpu_frontier.cu.i
+
+src/bfs_gpu_frontier.s: src/bfs_gpu_frontier.cu.s
+
+.PHONY : src/bfs_gpu_frontier.s
+
+# target to generate assembly for a file
+src/bfs_gpu_frontier.cu.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_frontier.cu.s
+.PHONY : src/bfs_gpu_frontier.cu.s
+
 src/bfs_gpu_naive.o: src/bfs_gpu_naive.cu.o
 
 .PHONY : src/bfs_gpu_naive.o
@@ -203,6 +230,33 @@ src/bfs_gpu_shared.s: src/bfs_gpu_shared.cu.s
 src/bfs_gpu_shared.cu.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_shared.cu.s
 .PHONY : src/bfs_gpu_shared.cu.s
+
+src/bfs_gpu_warp.o: src/bfs_gpu_warp.cu.o
+
+.PHONY : src/bfs_gpu_warp.o
+
+# target to build an object file
+src/bfs_gpu_warp.cu.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_warp.cu.o
+.PHONY : src/bfs_gpu_warp.cu.o
+
+src/bfs_gpu_warp.i: src/bfs_gpu_warp.cu.i
+
+.PHONY : src/bfs_gpu_warp.i
+
+# target to preprocess a source file
+src/bfs_gpu_warp.cu.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_warp.cu.i
+.PHONY : src/bfs_gpu_warp.cu.i
+
+src/bfs_gpu_warp.s: src/bfs_gpu_warp.cu.s
+
+.PHONY : src/bfs_gpu_warp.s
+
+# target to generate assembly for a file
+src/bfs_gpu_warp.cu.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bfs_gpu_warp.cu.s
+.PHONY : src/bfs_gpu_warp.cu.s
 
 src/graph.o: src/graph.cpp.o
 
@@ -297,12 +351,18 @@ help:
 	@echo "... src/bfs_cpu.o"
 	@echo "... src/bfs_cpu.i"
 	@echo "... src/bfs_cpu.s"
+	@echo "... src/bfs_gpu_frontier.o"
+	@echo "... src/bfs_gpu_frontier.i"
+	@echo "... src/bfs_gpu_frontier.s"
 	@echo "... src/bfs_gpu_naive.o"
 	@echo "... src/bfs_gpu_naive.i"
 	@echo "... src/bfs_gpu_naive.s"
 	@echo "... src/bfs_gpu_shared.o"
 	@echo "... src/bfs_gpu_shared.i"
 	@echo "... src/bfs_gpu_shared.s"
+	@echo "... src/bfs_gpu_warp.o"
+	@echo "... src/bfs_gpu_warp.i"
+	@echo "... src/bfs_gpu_warp.s"
 	@echo "... src/graph.o"
 	@echo "... src/graph.i"
 	@echo "... src/graph.s"

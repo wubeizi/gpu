@@ -7,11 +7,11 @@ CUDA_FLAGS =  -arch=sm_86 -std=c++17 -O3 -DNDEBUG   --expt-relaxed-constexpr
 
 CUDA_DEFINES = 
 
-CUDA_INCLUDES = -I/data1/zhangyouzhi/Learn_from_paper/gpu-main/include 
+CUDA_INCLUDES = -I/data0/lijiafeng/project/gpu/include 
 
 CXX_FLAGS = -O2   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/data1/zhangyouzhi/Learn_from_paper/gpu-main/include 
+CXX_INCLUDES = -I/data0/lijiafeng/project/gpu/include 
 

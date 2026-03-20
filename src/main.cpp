@@ -89,30 +89,27 @@ int main(int argc, char* argv[]) {
     check_result(cpu_level, level_gpu_naive, "GPU_naive");
     std::cout << std::endl;
 
+    // 优化一：使用frontier队列
     std::vector<int> gpu_level_v2(graph.num_nodes, -1);
     gpu_level_v2[source] = 0;
     double gpu_time_v2 = bfs_gpu_frontier(graph, source, gpu_level_v2);
     print_performance("GPU_frontier", gpu_time_v2, cpu_time);
     check_result(cpu_level, gpu_level_v2, "GPU_frontier");
-    //std::cout << std::endl;
-    //
-    // std::vector<int> gpu_level_v3;
-    // double gpu_time_v3 = bfs_gpu_direction(graph, source, gpu_level_v3);
-    // print_performance("GPU_direction", gpu_time_v3, cpu_time);
-    // check_result(cpu_level, gpu_level_v3, "GPU_direction");
-    // std::cout << std::endl;
-    //
-    // std::vector<int> gpu_level_v4;
-    // double gpu_time_v4 = bfs_gpu_shared(graph, source, gpu_level_v4);
-    // print_performance("GPU_shared", gpu_time_v4, cpu_time);
-    // check_result(cpu_level, gpu_level_v4, "GPU_shared");
-    // std::cout << std::endl;
+
+    // 优化二：使用共享内存缓存
     std::vector<int> level_gpu_shared(graph.num_nodes, -1);
     level_gpu_shared[source] = 0;
     double time_gpu_shared = bfs_gpu_shared(graph, source, level_gpu_shared);
     print_performance("GPU_shared", time_gpu_shared, cpu_time);
     check_result(cpu_level, level_gpu_shared, "GPU_shared");
 
+    // 优化三：Warp级调度
+    std::vector<int> gpu_level_warp(graph.num_nodes, -1);
+    gpu_level_warp[source] = 0;
+    double gpu_time_warp = bfs_gpu_warp(graph, source, gpu_level_warp);
+    print_performance("GPU_warp", gpu_time_warp, cpu_time);
+    check_result(cpu_level, gpu_level_warp, "GPU_warp");
+    std::cout << std::endl;
 
     std::cout << "========================================" << std::endl;
     std::cout << "  All tests completed." << std::endl;
